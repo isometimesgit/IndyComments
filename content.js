@@ -5,4 +5,4 @@ function walkComments() {
         body.innerHTML = body.innerHTML.replaceAll('<br>', '\n')
         body.innerHTML = body.textContent;
     })
-}
+} 
