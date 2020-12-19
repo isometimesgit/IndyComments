@@ -1,0 +1,39 @@
+{
+    "manifest_version": 2,
+    "name": "IndyComments",
+    "description": "Extra features for Independant article comments",
+    "version": "1.0.0",
+    "icons": {
+        "16": "/assets/icon/icon-on-x16.png",
+        "48": "/assets/icon/icon-on-x48.png",
+        "128": "/assets/icon/icon-on-x128.png"
+    },
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.independent.co.uk/*"
+            ],
+            "js": [
+                "js/jquery-3.5.1.slim.min.js",
+                "js/settings.js",
+                "js/content.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": {
+            "16": "/assets/icon/icon-on-x16.png",
+            "48": "/assets/icon/icon-on-x48.png",
+            "128": "/assets/icon/icon-on-x128.png"
+        }
+    },
+    "permissions": [
+        "https://www.independent.co.uk/*",
+        "storage"
+    ]
+}
