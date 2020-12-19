@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Format Indy Comments",
     "description": "Format Independent.co.uk article comments back into readable text",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
         "48": "assets/icon48.png",
         "96": "assets/icon96.png",
