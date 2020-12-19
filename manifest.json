@@ -1,12 +1,12 @@
 {
     "manifest_version": 2,
     "name": "Format Indy Comments",
-    "description": "Format Independant.co.uk article comments",
+    "description": "Format Independent.co.uk article comments back into readable text",
     "version": "1.0.0",
     "icons": {
-        "16": "/assets/logo16.png",
-        "48": "/assets/logo48.png",
-        "128": "/assets/logo128.png"
+        "48": "assets/icon48.png",
+        "96": "assets/icon96.png",
+        "128": "assets/icon128.png"
     },
     "content_scripts": [
         {
@@ -14,13 +14,11 @@
                 "https://www.independent.co.uk/*"
             ],
             "js": [
-                "js/settings.js",
-                "js/content.js"
+                "content.js"
             ]
         }
     ],
     "permissions": [
-        "https://www.independent.co.uk/*",
-        "storage"
+        "https://www.independent.co.uk/*"
     ]
 }
