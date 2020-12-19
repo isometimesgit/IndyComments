@@ -4,9 +4,9 @@
     "description": "Format Independant.co.uk article comments",
     "version": "1.0.0",
     "icons": {
-        "16": "/assets/icon/icon-on-x16.png",
-        "48": "/assets/icon/icon-on-x48.png",
-        "128": "/assets/icon/icon-on-x128.png"
+        "16": "/assets/logo16.png",
+        "48": "/assets/logo48.png",
+        "128": "/assets/logo128.png"
     },
     "content_scripts": [
         {
