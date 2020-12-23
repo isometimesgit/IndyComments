@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Format Indy Comments - Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            padding: .5rem;
+            font-size: 16px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            max-width: 10rem;
+            margin-top: .5rem;
+        }
+
+        .grid-container>div {
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: .5rem;
+            text-align: center;
+        }
+
+        input {
+            margin-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="checkbox" id="post-format" /> <label for="post-format">format characters on post</label><br>
+        <small>This requires font support on the readers OS / Browser (win 10 and Android 8 seem fine) 
+		Can also cause copied unicode text not behave as expected e.g. web addresses !.
+        </small>
+        <div class="grid-container">
+            <div style="grid-column-start: 1;grid-column-end: 5;">conversion table</div>
+
+            <div>text</div>
+            <div>entity (hex)</div>
+            <div>text</div>
+            <div>unicode (dec)</div>
+
+            <div>/</div>
+            <div>&amp;#x2F;</div>
+            <div>&#10187;</div>
+            <div>&amp;#10187;</div>
+
+            <div>\</div>
+            <div>&amp;#x5C;</div>
+            <div>&#10189;</div>
+            <div>&amp;#10189;</div>
+
+            <div>'</div>
+            <div>&amp;#x27;</div>
+            <div>&#712;</div>
+            <div>&amp;#712;</div>
+
+            <div>&</div>
+            <div>&amp;#x26;</div>
+            <div>&#65286;</div>
+            <div>&amp;#65286;</div>
+
+            <div>&#x3e;</div>
+            <div>&amp;#x3e;</div>
+            <div>&#65310;</div>
+            <div>&amp;#65310;</div>
+
+            <div>&#x3c;</div>
+            <div>&amp;#x3c;</div>
+            <div>&#65308;</div>
+            <div>&amp;#65308;</div>
+        </div>
+    </form>
+    <script src="options.js"></script>
+</body>
